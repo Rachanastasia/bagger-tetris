@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import GameContextProvider, { GameContext } from '../contexts/gameContext';
 
 function Start() {
+  const { setPlaying } = useContext(GameContext);
   return (
     <section>
-      <span>Start!</span>
+      <button onClick={() => setPlaying(true)}>Play!</button>
     </section>
   )
 }

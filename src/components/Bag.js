@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import '../css/Bag.css'
+import '../css/Bag.css';
 
 function Bag() {
   return (
@@ -9,4 +9,4 @@ function Bag() {
   )
 }
 
-export default Bag
+export default Bag;
