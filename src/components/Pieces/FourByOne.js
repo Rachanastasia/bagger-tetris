@@ -6,8 +6,8 @@ function EggCarton() {
   const [rotated, setRotated] = useState(false);
 
   return (
-    <div className='egg-carton-wrapper'>
-
+    <div className='four-by-one width-four height-one piece'>
+      <h2>HI</h2>
     </div>
   )
 }

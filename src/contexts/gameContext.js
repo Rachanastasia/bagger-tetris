@@ -4,6 +4,10 @@ export const GameContext = createContext();
 
 function GameContextProvider({ children }) {
   const [playing, setPlaying] = useState(false);
+  //holds pieces that are generated every five seconds
+  const [bank, setBank] = useState([]);
+  //contains pieces placed on the board
+  const [board, setBoard] = useState([]);
 
   //starts timer if playing and when playing changes
   useEffect(() => {
@@ -12,15 +16,17 @@ function GameContextProvider({ children }) {
     }
   }, [playing])
 
+  console.log({ bank })
+
   //starts timer in async function
   async function handleTimer() {
     await setTimeout(function () {
-      console.log('setting to false')
+
       setPlaying(false);
     }, 20000)
   }
 
-  const value = { playing, setPlaying }
+  const value = { playing, bank, board, setPlaying, setBank, setBoard }
 
   return (
     <GameContext.Provider value={value}>

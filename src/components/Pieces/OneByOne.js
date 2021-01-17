@@ -6,8 +6,8 @@ function Can() {
   const [rotated, setRotated] = useState(false);
 
   return (
-    <div className='can-wrapper'>
-
+    <div className='one-by-one width-one height-one piece'>
+      <h2>HI</h2>
     </div>
   )
 }

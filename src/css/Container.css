@@ -1,0 +1,10 @@
+.container-wrapper{
+  display: grid;
+  width: 80vw;
+  height: 20vw;
+  background-color: var(--colors-accent);
+}
+
+.piece{
+  background-color: pink;
+}

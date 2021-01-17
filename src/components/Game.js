@@ -1,10 +1,14 @@
 import React from 'react';
-import Bag from './Bag';
+import Container from './Container';
+import Bank from './Bank';
 
 function Game() {
+
+
   return (
     <section>
-      <Bag />
+      <Container />
+      <Bank />
     </section>
   )
 };
